@@ -21,10 +21,15 @@ def show_expenses():
 
 
 def show_total():
+<<<<<<< HEAD
     total = sum(item["amount"] for item in expenses)
     print(f"Total : {total:.2f}")
 
 
+=======
+    # Travail de l'etudiant B
+    pass
+>>>>>>> 1f5afff (Add average expense feature)
 def show_average():
     if not expenses:
         print("No expenses recorded.")
@@ -32,8 +37,11 @@ def show_average():
     total = sum(item["amount"] for item in expenses)
     average = total / len(expenses)
     print(f"Average expense: {average:.2f}")
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1f5afff (Add average expense feature)
 def main():
     while True:
         print("\n===== SUIVI DES DEPENSES =====")
@@ -51,6 +59,8 @@ def main():
             show_total()
         elif choice == "4":
             print("Au revoir !")
+        elif choice == "5":
+            show_average()
             break
         elif choice == "5":
             show_average()
